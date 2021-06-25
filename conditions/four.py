@@ -6,12 +6,12 @@ else convert it to kg.
 '''
 
 weight = int(input("Enter the weight:"))
-kg_lbs = int(input("1.kg or 2.lbs:"))
+kg_lbs = input("(K)g or (L)bs:").lower()
 
-if kg_lbs == 1:
+if kg_lbs == "k":
     convertedWeight = weight * 2.20462
     print(f"The weight in lbs is {convertedWeight}.")
-elif kg_lbs == 2:
+elif kg_lbs == "l":
     convertedWeight = weight//2.20462
     print(f"The weight in kg is {convertedWeight}.")
 else:
