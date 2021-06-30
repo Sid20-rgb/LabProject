@@ -2,13 +2,19 @@
  limit is 20, it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20'''
 
 def sum_of_multiples(limit):
-
-    for i in range(0, limit):
+    sum =0
+    for i in range(0, limit+1):
         if i%3==0 or i%5==0:
             print(i, end=" ")
+            print()
+            sum = sum +i
+    return sum
+
 
 limit = int(input("Enter a limit:"))
-sum_of_multiples(limit)
+ans = sum_of_multiples(limit)
+print(f"sum:{ans}")
+
 
 
 

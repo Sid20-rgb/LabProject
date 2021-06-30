@@ -1,2 +1,19 @@
-'''.9 Write a Python function that checks whether a passed string is palindrome or not.Note: A palindrome is a word, phrase,
-or sequence that reads the same backward as forward, e.g., madam or nurses run.'''
+'''.9 Write a Python function that checks whether a passed string is palindrome or not.Note: A palindrome is a word,
+phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.'''
+
+def palindrome():
+
+    rev = string[::-1]
+
+    if rev == string:
+        return "Palindrome"
+    else:
+        return "Not Palindrome"
+
+string = str(input("Enter a string:"))
+
+ans = palindrome()
+
+print(ans)
+
+
