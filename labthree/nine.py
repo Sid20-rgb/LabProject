@@ -3,7 +3,7 @@ phrase, or sequence that reads the same backward as forward, e.g., madam or nurs
 
 def palindrome():
 
-    rev = string[::-1]
+    rev = string[::-1] #rev string
 
     if rev == string:
         return "Palindrome"
