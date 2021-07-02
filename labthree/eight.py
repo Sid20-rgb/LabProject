@@ -10,4 +10,6 @@ def test_prime(n):
             if(n % x==0):
                 return "Not Prime number"
         return "Prime number"
-print(test_prime(5))
+
+n = int(input("Enter a number:"))
+print(test_prime(n))
